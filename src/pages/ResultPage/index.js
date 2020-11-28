@@ -27,7 +27,13 @@ const ResultPage = () => {
     <div className={`container ${state && state.theme}-bg`}>
       <div className="flex-row">
         <img src={githublogo} alt="" className="github" />
-        <a href="www.google.com">Github code review</a>
+        <a
+          href="https://github.com/Simplemart17/chaeban-code-challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Github code review
+        </a>
       </div>
       <div style={{ fontSize: "40px", lineHeight: 2, fontWeight: 700 }}>
         {new Date(state && state.date).toString().slice(0, 15)}
