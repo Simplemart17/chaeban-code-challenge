@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +12,265 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  height: 2.5rem;
+  width: 6rem;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #851685;
+  color: white;
+  cursor: pointer;
+  font-size: large;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background-color: #c51dc5;
+  color: white;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #f0f0f0;
+  color: #525151;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-weight: 500;
+}
+
+.header {
+  font-size: larger;
+  color: #c54da7;
+}
+
+.left-1\.5 {
+  left: 1.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin-left {
+  margin-left: 15px;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.margin-right {
+  margin-right: 0.75rem;
+}
+
+.logo {
+  width: 40px;
+  pointer-events: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.date-input {
+  width: 83%;
+  height: 1rem;
+  padding: 0.875rem;
+  margin: 0;
+  color: #2d3748;
+  font-size: 1.875rem;
+  line-height: 1.25;
+  border: 2px solid #EBEDED;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #EBEDED;
+}
+
+.input-container {
+  border-width: 2px;
+  width: 100%;
+  height: 1rem;
+  border-radius: 3px;
+  padding: 0.188rem 0.75rem;
+  border-color: #EBEDED;
+}
+
+.text-area {
+  font-size: 1rem;
+  appearance: none;
+  width: 401px;
+  height: 149px;
+  border-radius: 6px;
+  padding: 0.5rem;
+  padding-left: 10px;
+  border: 2px solid #EBEDED;
+  outline: none;
+  line-height: 1.25;
+  color: #2d3748;
+  margin-bottom: 15px;
+  background-color: #EBEDED;
+}
+
+.calender-icon {
+  width: 2.3rem;
+  top: 8px;
+  right: 45px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-border-radius {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.right-border-radius {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.color-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 4rem;
+  cursor: pointer;
+  border: none;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.selected-col {
+  font-size: 14px;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+ color: green;
+}
+
+.purple {
+  color: purple;
+}
+
+.brown {
+  color: brown;
+}
+
+.red-bg {
+  background-color: red;
+}
+
+.purple-bg {
+  background-color: purple;
+}
+
+.green-bg {
+  background-color: green;
+}
+
+.brown-bg {
+  background-color:brown;
+}
+
+.blue-bg {
+  background-color: blue;
+}
+
+.fill-current{
+  fill: currentColor;
+}
+
+.github {
+  width: 22px;
+  margin-right: 3px;
+}
+
+@-webkit-keyframes spinAround {
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinAround {
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    -webkit-animation: spinAround infinite 20s linear;
+            animation: spinAround infinite 20s linear;
+  }
 }
