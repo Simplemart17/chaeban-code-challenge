@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import calendarIcon from "../../assets/icons/calendar.svg";
 
 /**
  * @description - date picker component
@@ -22,12 +21,6 @@ const DatesPicker = (props) => {
         name={props.name}
         placeholder={props.placeholder}
         readOnly
-      />
-      <img
-        onClick={onClick}
-        src={calendarIcon}
-        alt=""
-        className="calender-icon relative"
       />
     </div>
   );
